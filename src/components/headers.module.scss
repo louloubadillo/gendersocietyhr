@@ -1,0 +1,57 @@
+$thetransition: all .5s cubic-bezier(1,.25,0,.75) 0s;
+
+.header{
+    background: black;
+    overflow-x: hidden;
+}
+
+.hero{
+    width: 250px;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+}
+
+.navList{ 
+    display: flex; 
+    flex-flow: row wrap;
+    margin: 0; 
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.navItem{
+    display: inline-block;
+    margin: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    color: white;
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background-color: #54b6aa;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: $thetransition;
+        transition: $thetransition;
+        }
+        &:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        }
+}
+
+.active-nav-item{
+    color: #54b6aa;
+}

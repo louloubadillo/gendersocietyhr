@@ -1,0 +1,56 @@
+/*Not using this one for the moment*/
+
+$thetransition: all .5s cubic-bezier(1,.25,0,.75) 0s;
+
+.header{
+    background: black;
+}
+
+
+.hero{
+    width: 220px;
+    display:block;
+    margin:auto;
+}
+
+.nav-list{
+    display: flex;
+    margin: auto; 
+    text-align: center;
+    list-style-type: none;
+}
+
+.nav-item{
+    display: inline-block;
+    font-size: .9rem;
+    margin: .8rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    color: white;
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background-color: #54b6aa;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: $thetransition;
+        transition: $thetransition;
+        }
+        &:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        }
+}
+
+.active-nav-item{
+    color: #54b6aa;
+}
+
+

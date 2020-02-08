@@ -1,0 +1,71 @@
+.banner{
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 2px;
+    margin-left: 8%;
+    margin-right: 8%;
+
+    h1, h3{
+        margin: 1%;
+    }
+    p{
+        margin: 0;
+        font-size: medium;
+    }
+}
+
+.posts{
+    margin: 0; 
+    justify-content:center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.post{
+    width: 300px;
+    margin: 3%;
+    
+    a{
+        color: white; 
+        display:block; 
+        padding: 1rem;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: #54b6aa; 
+    }
+
+    h2{
+        margin: 0;
+    }
+
+    p{
+        margin: 0; 
+        padding: 0;
+        color: white; 
+    }
+}
+
+.tagsContainer{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 0; 
+    padding: 0;
+}
+.tagsList{
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex; 
+    flex-flow: row wrap;
+    list-style-type: none;
+    padding-left: 2px;
+    padding-right:2px ;
+}
+
+.tag{
+    font-size: smaller;
+}

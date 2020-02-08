@@ -1,0 +1,16 @@
+$font-stack: 'Source Sans Pro', sans-serif;
+html {
+    font-family: $font-stack; 
+    background-color: rgb(12, 12, 12);
+    text-align: center;
+    margin: 0; 
+    padding: 0em;
+    height: 100%;
+    overflow-x: hidden;
+  }
+
+  @media only screen and (max-width: 480px) {
+    html {
+      font-size: 100%;
+    }
+  }
