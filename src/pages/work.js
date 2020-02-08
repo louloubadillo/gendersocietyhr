@@ -45,8 +45,7 @@ const WorkSection = () => {
             <Head title="Work Section"/>
             <div className = {blogStyles.banner}>
                 <h1>Work</h1>
-                <p>I love programming. It’s an amazing feeling to be able to develop something from scratch.<br></br>
-                You can learn how to code too. It's a great tool (even if you don't want to work in tech), don't be afraid to try.</p>
+                <p>In this section I will post regarding my work. This includes: freelancing tips, internship experiences and more.</p>
             </div>
             <div className = {blogStyles.posts}>
                {data.allMarkdownRemark.edges.map((edge) =>{

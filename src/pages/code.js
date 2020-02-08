@@ -45,8 +45,8 @@ const CodeSection = () => {
             <Head title="Code Section"/>
             <div className = {blogStyles.banner}>
                 <h1>Code</h1>
-                <p>I think coding is a superpower. <br></br> 
-                There's nothing like developing something with the potential of making someone's life easier.</p>
+                <p>I think coding is a superpower, there's nothing like developing something with the potential of making someone's life easier.<br></br>
+                This section includes tutorials, snippets, my experience while learning how to code and more.</p>
             </div>
             <div className = {blogStyles.posts}>
                {data.allMarkdownRemark.edges.map((edge) =>{

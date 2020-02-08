@@ -45,8 +45,8 @@ const StudySection = () => {
             <Head title="Study Section"/>
             <div className = {blogStyles.banner}>
                 <h1>Study</h1>
-                <p>I love programming. It’s an amazing feeling to be able to develop something from scratch.<br></br>
-                You can learn how to code too. It's a great tool (even if you don't want to work in tech), don't be afraid to try.</p>
+                <p>I am currently a Computer Science student. I have always enjoyed learning new things. <br></br>
+                This section includes notes, tips for studying, productive hacks and more. </p>
             </div>
             <div className = {blogStyles.posts}>
                {data.allMarkdownRemark.edges.map((edge) =>{
