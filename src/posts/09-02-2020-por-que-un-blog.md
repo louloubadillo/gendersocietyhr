@@ -3,7 +3,7 @@ ima: "./woman-post.png"
 tags: ['Meta', 'Español']
 title: "¿Por qué un blog?"
 description: "Lo que me llevó a desarrollar un blog"
-date: 08/02/2020
+date: 09/02/2020
 category: "projects"
 cover: true
 ---
