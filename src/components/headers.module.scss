@@ -31,12 +31,14 @@ $thetransition: all .5s cubic-bezier(1,.25,0,.75) 0s;
     text-decoration: none;
     position: relative;
     color: white;
-    &:before {
+    &:before{
         content: "";
         position: absolute;
-        width: 100%;
+        width: 82%;
+        margin-left: 10%;
+        margin-right: 20%;
         height: 2px;
-        bottom: -5px;
+        bottom: 10px;
         left: 0;
         background-color: #54b6aa;
         visibility: hidden;
@@ -54,4 +56,23 @@ $thetransition: all .5s cubic-bezier(1,.25,0,.75) 0s;
 
 .active-nav-item{
     color: #54b6aa;
+}
+
+@media only screen and (max-width: 768px) {
+    .hero{
+        width: 220px;
+        margin: 0;
+        
+    }
+    .navList{ 
+        margin: 0; 
+        padding: 0;
+        list-style-type: none;
+        overflow: hidden;
+        font-size: smaller;
+    } 
+
+    .navItem{
+        margin: 0px;
+    }
 }
