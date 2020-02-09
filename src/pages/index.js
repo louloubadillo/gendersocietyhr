@@ -49,7 +49,7 @@ const HomePage = () => {
                     I enjoy starting new projects that allow me to mix my interest for developing and entrepreneurship.
                     </p>
                 </div> 
-                <h3>Featured Posts:</h3>
+                <h3 className = {blogStyles.featured}>Featured Posts:</h3>
                 <div className = {blogStyles.posts}>
                 {data.allMarkdownRemark.edges.map((edge) =>{
                         return (

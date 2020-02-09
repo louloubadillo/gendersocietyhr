@@ -15,6 +15,8 @@
 }
 
 .posts{
+    margin-top: 0px;
+    padding-top: 0px;
     margin: 0; 
     justify-content:center;
     display: flex;
@@ -24,7 +26,10 @@
 
 .post{
     width: 300px;
-    margin: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 5px;
+    margin-bottom: 5px;
     
     a{
         color: white; 
@@ -68,4 +73,8 @@
 
 .tag{
     font-size: small;
+}
+
+.featured{
+    margin-bottom: 0;
 }
