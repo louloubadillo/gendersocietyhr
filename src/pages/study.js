@@ -46,7 +46,7 @@ const StudySection = () => {
             <div className = {blogStyles.banner}>
                 <h1>Study</h1>
                 <p>I am currently a Computer Science student. I have always enjoyed learning new things. <br></br>
-                This section includes notes, tips for studying, productive hacks and more. </p>
+                This section includes notes, tips for studying, productivity hacks and more. </p>
             </div>
             <div className = {blogStyles.posts}>
                {data.allMarkdownRemark.edges.map((edge) =>{

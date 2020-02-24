@@ -4,6 +4,7 @@ import Img from 'gatsby-image'
 
 import Layout from '../components/layout';
 import blogStyles from '../styles/tags.module.scss'
+import Head from '../components/head'
 
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext;
@@ -14,6 +15,7 @@ const Tags = ({ pageContext, data }) => {
   return (
     <div>
     <Layout>
+      <Head title="Tags"/>
       <div className = {blogStyles.banner}>
           <h1>{tagHeader}</h1>
       </div>
