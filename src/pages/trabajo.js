@@ -2,15 +2,15 @@ import React from 'react'
 import {Link, graphql, useStaticQuery} from 'gatsby'
 import Img from 'gatsby-image'
 import { kebabCase } from 'lodash';
-import Head from '../components/head'
 
 import Layout from '../components/layout'
 import blogStyles from './blog.module.scss'
+import Head from '../components/head'
 
-const CodeSection = () => {
+const WorkSection = () => {
     const data = useStaticQuery(graphql`
         query{
-            allMarkdownRemark(filter: { frontmatter: { category: { eq: "code"} } } 
+            allMarkdownRemark(filter: { frontmatter: { category: { eq: "work"} } } 
             sort: {order: DESC, fields: [frontmatter___date]}
             ){
                 edges {
@@ -42,11 +42,10 @@ const CodeSection = () => {
     return(
         <div>
             <Layout>
-            <Head title="Code Section"/>
+            <Head title="Trabajo"/>
             <div className = {blogStyles.banner}>
-                <h1>Code</h1>
-                <p>I think coding is a superpower, there's nothing like developing something with the potential of making someone's life easier.<br></br>
-                This section includes tutorials, snippets, my experience while learning how to code and more.</p>
+                <h1>Trabajo</h1>
+                <p>En esta sección escribiré acerca de mi trabajo.</p>
             </div>
             <div className = {blogStyles.posts}>
                {data.allMarkdownRemark.edges.map((edge) =>{
@@ -78,4 +77,4 @@ const CodeSection = () => {
     )
 }
 
-export default CodeSection
+export default WorkSection

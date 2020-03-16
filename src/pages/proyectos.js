@@ -7,10 +7,10 @@ import Layout from '../components/layout'
 import blogStyles from './blog.module.scss'
 import Head from '../components/head'
 
-const WorkSection = () => {
+const ProjectsSection = () => {
     const data = useStaticQuery(graphql`
         query{
-            allMarkdownRemark(filter: { frontmatter: { category: { eq: "work"} } } 
+            allMarkdownRemark(filter: { frontmatter: { category: { eq: "projects"} } } 
             sort: {order: DESC, fields: [frontmatter___date]}
             ){
                 edges {
@@ -42,10 +42,10 @@ const WorkSection = () => {
     return(
         <div>
             <Layout>
-            <Head title="Work Section"/>
+            <Head title="Proyectos"/>
             <div className = {blogStyles.banner}>
-                <h1>Work</h1>
-                <p>In this section I will post regarding my work. This includes: freelancing tips, internship experiences and more.</p>
+                <h1>Proyectos</h1>
+                <p>Me apasiona el emprendimiento. En esta sección compartiré acerca de los proyectos en los que he trabajado.</p>
             </div>
             <div className = {blogStyles.posts}>
                {data.allMarkdownRemark.edges.map((edge) =>{
@@ -77,4 +77,4 @@ const WorkSection = () => {
     )
 }
 
-export default WorkSection
+export default ProjectsSection

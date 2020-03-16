@@ -42,19 +42,19 @@ const HomePage = () => {
     return (
         <div>
             <Layout>
-                <Head title="Home"/>
+                <Head title="Inicio"/>
                 <div className = {blogStyles.banner}>   
                     <h1>louloubadillo</h1>
-                    <p>I'm a Computer Science student who loves learning new things.<br></br>
-                    I enjoy starting new projects that allow me to mix my interest for developing and entrepreneurship.
+                    <p>Hola, soy una estudiante de Ciencias de la Computación, a la que le encanta aprender cosas nuevas.<br></br>
+                    Disfruto desarrollar proyectos que me permitan mezclar mis intereses por la programación, el emprendimiento y el diseño. 
                     </p>
                 </div> 
-                <h3 className = {blogStyles.featured}>Featured Posts:</h3>
+                <h3 className = {blogStyles.featured}>Recomendaciones</h3>
                 <div className = {blogStyles.posts}>
                 {data.allMarkdownRemark.edges.map((edge) =>{
                         return (
                             <div className = {blogStyles.post}> 
-                                <Link to={`/blog/${edge.node.fields.slug}`}>
+                                <Link to={`/${edge.node.fields.slug}`}>
                                 <Img fluid = {edge.node.frontmatter.ima.childImageSharp.fluid}/>
                                 {edge.node.frontmatter.tags ? (
                                     <div className= {blogStyles.tagsContainer}>

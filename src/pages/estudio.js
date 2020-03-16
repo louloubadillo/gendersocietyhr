@@ -7,10 +7,10 @@ import Layout from '../components/layout'
 import blogStyles from './blog.module.scss'
 import Head from '../components/head'
 
-const ProjectsSection = () => {
+const StudySection = () => {
     const data = useStaticQuery(graphql`
         query{
-            allMarkdownRemark(filter: { frontmatter: { category: { eq: "projects"} } } 
+            allMarkdownRemark(filter: { frontmatter: { category: { eq: "study"} } } 
             sort: {order: DESC, fields: [frontmatter___date]}
             ){
                 edges {
@@ -42,10 +42,11 @@ const ProjectsSection = () => {
     return(
         <div>
             <Layout>
-            <Head title="Projects Section"/>
+            <Head title="Estudio"/>
             <div className = {blogStyles.banner}>
-                <h1>Projects</h1>
-                <p>I'm passionate about entrepreneurship, I love starting new projects.</p>
+                <h1>Estudio</h1>
+                <p>Actualmento soy estudiante de Ciencias de la Computación. Siempre me ha gustado aprender cosas nuevas. <br></br>
+                En esta sección publicaré notas, tips para estudiar y sobre cómo ser productivo, mi experiencia en la universidad y al estudiar programación.</p>
             </div>
             <div className = {blogStyles.posts}>
                {data.allMarkdownRemark.edges.map((edge) =>{
@@ -77,4 +78,4 @@ const ProjectsSection = () => {
     )
 }
 
-export default ProjectsSection
+export default StudySection

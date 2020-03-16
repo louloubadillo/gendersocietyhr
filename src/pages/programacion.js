@@ -2,15 +2,15 @@ import React from 'react'
 import {Link, graphql, useStaticQuery} from 'gatsby'
 import Img from 'gatsby-image'
 import { kebabCase } from 'lodash';
+import Head from '../components/head'
 
 import Layout from '../components/layout'
 import blogStyles from './blog.module.scss'
-import Head from '../components/head'
 
-const StudySection = () => {
+const CodeSection = () => {
     const data = useStaticQuery(graphql`
         query{
-            allMarkdownRemark(filter: { frontmatter: { category: { eq: "study"} } } 
+            allMarkdownRemark(filter: { frontmatter: { category: { eq: "code"} } } 
             sort: {order: DESC, fields: [frontmatter___date]}
             ){
                 edges {
@@ -42,11 +42,12 @@ const StudySection = () => {
     return(
         <div>
             <Layout>
-            <Head title="Study Section"/>
+            <Head title="Programación"/>
             <div className = {blogStyles.banner}>
-                <h1>Study</h1>
-                <p>I am currently a Computer Science student. I have always enjoyed learning new things. <br></br>
-                This section includes notes, tips for studying, productivity hacks and more. </p>
+                <h1>Programación</h1>
+                <p>Para mí, programar es como un superpoder. No hay nada como desarrollar algo con el potencial de cambiarle la vida a alguien. <br></br>
+                Mi propósito es hacerte más fácil aprender a programar. <br></br>
+                En esta sección incluiré tutoriales, recursos para aprender a programar y recomendaciones.</p>
             </div>
             <div className = {blogStyles.posts}>
                {data.allMarkdownRemark.edges.map((edge) =>{
@@ -78,4 +79,4 @@ const StudySection = () => {
     )
 }
 
-export default StudySection
+export default CodeSection

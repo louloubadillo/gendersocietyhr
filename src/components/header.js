@@ -11,19 +11,19 @@ const Header = () => {
             <nav className = {headerStyles.nav}>
                 <ul className = {headerStyles.navList}>
                     <li>
-                        <Link className = {headerStyles.navItem} activeClassName = {headerStyles.activeNavItem} to="/"> 🏠 Home</Link>
+                        <Link className = {headerStyles.navItem} activeClassName = {headerStyles.activeNavItem} to="/"> 🏠 Inicio</Link>
                     </li>
                     <li>
-                        <Link className = {headerStyles.navItem} activeClassName = {headerStyles.activeNavItem} to="/code"> 💻 Code</Link>
+                        <Link className = {headerStyles.navItem} activeClassName = {headerStyles.activeNavItem} to="/programacion"> 💻 Programación</Link>
                     </li>
                     <li>
-                        <Link className = {headerStyles.navItem} activeClassName = {headerStyles.activeNavItem} to="/work"> 💼 Work</Link>
+                        <Link className = {headerStyles.navItem} activeClassName = {headerStyles.activeNavItem} to="/trabajo"> 💼 Trabajo</Link>
                     </li>
                     <li>
-                        <Link className = {headerStyles.navItem} activeClassName = {headerStyles.activeNavItem} to="/study"> 📚 Study</Link>
+                        <Link className = {headerStyles.navItem} activeClassName = {headerStyles.activeNavItem} to="/estudio"> 📚 Estudio</Link>
                     </li>
                     <li>
-                        <Link className = {headerStyles.navItem} activeClassName = {headerStyles.activeNavItem} to="/projects"> 💡 Projects</Link>
+                        <Link className = {headerStyles.navItem} activeClassName = {headerStyles.activeNavItem} to="/proyectos"> 💡 Proyectos</Link>
                     </li>
                     <li>
                         <Link className = {headerStyles.navItem} activeClassName = {headerStyles.activeNavItem} to="/tags"> 🏷 Tags</Link>
