@@ -9,9 +9,9 @@ import Head from '../components/head'
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext;
   const { edges, totalCount } = data.allMarkdownRemark;
-  const tagHeader = `${totalCount} post${
+  const tagHeader = `${totalCount} posts${
     totalCount === 1 ? '' : 's'
-  } tagged with "${tag}"`;
+  } tienen el tag: "${tag}"`;
   return (
     <div>
     <Layout>
@@ -26,7 +26,7 @@ const Tags = ({ pageContext, data }) => {
             const { slug } = node.fields;
             return (
               <div className = {blogStyles.post}> 
-                <Link to={`/blog/${slug}`}>
+                <Link to={`/${slug}`}>
                   <Img fluid = {ima.childImageSharp.fluid}/>
                   <h2>{title}</h2>
                   <p>{description}</p>
@@ -37,7 +37,7 @@ const Tags = ({ pageContext, data }) => {
           })}
         
         </div>
-        <Link to="/tags">All tags</Link>
+        <Link to="/tags">Todos los tags</Link>
     </Layout>
     </div> 
   );
