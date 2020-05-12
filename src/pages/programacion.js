@@ -45,9 +45,7 @@ const CodeSection = () => {
             <Head title="Programación"/>
             <div className = {blogStyles.banner}>
                 <h1>Programación</h1>
-                <p>Para mí, programar es como un superpoder. No hay nada como desarrollar algo con el potencial de cambiarle la vida a alguien. <br></br>
-                Mi propósito es hacerte más fácil aprender a programar. <br></br>
-                En esta sección incluiré tutoriales, recursos para aprender a programar y recomendaciones.</p>
+                <p>En esta sección incluiré tutoriales, recursos para aprender a programar y recomendaciones.</p>
             </div>
             <div className = {blogStyles.posts}>
                {data.allMarkdownRemark.edges.map((edge) =>{
