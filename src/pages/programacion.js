@@ -53,7 +53,7 @@ const CodeSection = () => {
                {data.allMarkdownRemark.edges.map((edge) =>{
                     return (
                         <div className = {blogStyles.post}> 
-                            <Link to={`/blog/${edge.node.fields.slug}`}>
+                            <Link to={`${edge.node.fields.slug}`}>
                             <Img fluid = {edge.node.frontmatter.ima.childImageSharp.fluid}/>
                             {edge.node.frontmatter.tags ? (
                                 <div className= {blogStyles.tagsContainer}>

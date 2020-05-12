@@ -1,5 +1,5 @@
 ---
-ima: "./woman-post.png"
+ima: "./woman-post.jpg"
 tags: ['Meta']
 title: "¿Por qué un blog?"
 description: "Lo que me llevó a desarrollar un blog"
