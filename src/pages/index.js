@@ -45,7 +45,7 @@ const HomePage = () => {
                 <Head title="Inicio"/>
                 <div className = {blogStyles.banner}>   
                     <h1>louloubadillo</h1>
-                    <p>Hola, soy una estudiante de Ciencias de la Computación, a la que le encanta aprender cosas nuevas.<br></br>
+                    <p>Estudio Ciencias de la Computación y me encanta aprender cosas nuevas.<br></br>
                     Disfruto desarrollar proyectos que me permitan mezclar mis intereses por la programación, el emprendimiento y el diseño. 
                     </p>
                 </div> 

@@ -1,5 +1,5 @@
 ---
-ima: "./woman-post.jpg"
+ima: "./woman-post.png"
 tags: ['Meta']
 title: "¿Por qué un blog?"
 description: "Lo que me llevó a desarrollar un blog"
@@ -21,7 +21,7 @@ La intención de este blog es poder ayudar a otros a entender cómo una pieza em
 
 ## Sobre Mí
 
-Mi nombre es Lourdes Badillo, estudiante de Ciencias de la Computación. 
+Mi nombre es Lourdes Badillo y estudio Ciencias de la Computación. 
 
 Aprendí a programar en línea, sin si quiera saberlo. A los 8 años empecé mi primera página web, sentía que era como tener un pequeño espacio del internet para mí. Pero no sabía que era el principio de algo mucho más grande.
 
@@ -35,12 +35,10 @@ Descubrí lo que era programar unos cuantos años después. Poco a poco fui ente
    
     Fue muy difícil para mí "escoger" un idioma para el blog. 
 
-    Decidí escribir en inglés el menú, debido a que es más fácil para mí programar con los nombres de las variables en este idioma y me pareció que esto le daba consistencia al sitio. <br>
-Sin embargo, habrán posts escritos en español y otros en inglés. 
+    Decidí escribir el sitio en español debido a que hay pocos recursos para aprender a programar en este idioma. <br> Sin embargo, habrán posts escritos en español y otros en inglés. 
    
 2. Las secciones
    
-   Como mencioné anteriormente, el menú está en inglés. <br>
    En cada sección se abordarán temas distintos:
 
    - Code (Programación)
@@ -72,7 +70,7 @@ Sé que existen varias excelentes opciones de sitios que te permiten tener un bl
 
  Mi blog es mi manera de dar algo a la comunidad de desarrolladores, después de todo lo que yo he obtenido de la misma. Y, por lo tanto, me parecía justo desarrollarla por completo... Además de ser un muy divertido (y retador) proyecto.
 
- Así que me puse a investigar sobre la mejor de manera de hacerlo. 
+ Así que me puse a investigar sobre la mejor manera de hacerlo. 
 
  Este blog está construído con Gatsby. Ha sido una experiencia increíble el empezarlo de cero y lo recomiendo 100%, yo no tenía ningún conocimiento de React, mucho menos de Gatsby. Me tomó alrededor de dos semanas continuas de trabajo el tenerlo listo para publicar. Próximamente publicaré un post sobre cómo lo desarrollé y cómo tú también puedes hacerlo.
 
