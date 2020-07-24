@@ -11,22 +11,22 @@ const Header = () => {
             <nav className = {headerStyles.nav}>
                 <ul className = {headerStyles.navList}>
                     <li>
-                        <Link className = {headerStyles.navItem} activeClassName = {headerStyles.activeNavItem} to="/"> 🏠 Inicio</Link>
+                        <Link className = {headerStyles.navItem} activeClassName = {headerStyles.activeNavItem} to="/"> <span role="img" aria-label="Emoji de casa">🏠</span> Inicio</Link>
                     </li>
                     <li>
-                        <Link className = {headerStyles.navItem} activeClassName = {headerStyles.activeNavItem} to="/programacion"> 💻 Programación</Link>
+                        <Link className = {headerStyles.navItem} activeClassName = {headerStyles.activeNavItem} to="/programacion"> <span role="img" aria-label="Emoji de computadora">💻</span> Programación</Link>
                     </li>
                     <li>
-                        <Link className = {headerStyles.navItem} activeClassName = {headerStyles.activeNavItem} to="/trabajo"> 💼 Trabajo</Link>
+                        <Link className = {headerStyles.navItem} activeClassName = {headerStyles.activeNavItem} to="/trabajo">   <span role="img" aria-label="Emoji de portafolio">💼</span> Trabajo</Link>
                     </li>
                     <li>
-                        <Link className = {headerStyles.navItem} activeClassName = {headerStyles.activeNavItem} to="/estudio"> 📚 Estudio</Link>
+                        <Link className = {headerStyles.navItem} activeClassName = {headerStyles.activeNavItem} to="/estudio">  <span role="img" aria-label="Emoji de libros">📚</span> Estudio</Link>
                     </li>
                     <li>
-                        <Link className = {headerStyles.navItem} activeClassName = {headerStyles.activeNavItem} to="/proyectos"> 💡 Proyectos</Link>
+                        <Link className = {headerStyles.navItem} activeClassName = {headerStyles.activeNavItem} to="/proyectos">  <span role="img" aria-label="Emoji de un foco">💡</span> Proyectos</Link>
                     </li>
                     <li>
-                        <Link className = {headerStyles.navItem} activeClassName = {headerStyles.activeNavItem} to="/tags"> 🏷 Tags</Link>
+                        <Link className = {headerStyles.navItem} activeClassName = {headerStyles.activeNavItem} to="/tags">  <span role="img" aria-label="Emoji de etiqueta">🏷️</span> Tags</Link>
                     </li>
                 </ul>
             </nav>
