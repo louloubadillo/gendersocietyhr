@@ -3,7 +3,7 @@ ima: "./compilercpp.png"
 tags: ['C++', 'Tutorial']
 title: "¿Cómo compilar archivos de C++ en la terminal?"
 description: "Explicación breve sobre cómo compilo C++ desde mi terminal en VSCode"
-date: 12/05/2020
+date: "2020-05-12T00:00:00.000Z"
 category: "code"
 cover: true
 ---

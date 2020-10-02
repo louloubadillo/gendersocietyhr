@@ -11,7 +11,7 @@ const StudySection = () => {
     const data = useStaticQuery(graphql`
         query{
             allMarkdownRemark(filter: { frontmatter: { category: { eq: "study"} } } 
-            sort: {order: DESC, fields: [frontmatter___date]}
+            sort: {order: DESC, fields: [frontmatter___date, frontmatter___title]}
             ){
                 edges {
                     node{
@@ -19,7 +19,7 @@ const StudySection = () => {
                             tags
                             title
                             description
-                            date
+                            date(formatString: "DD/MM/YYYY")
                             tags
                             category
                             ima {
@@ -42,17 +42,15 @@ const StudySection = () => {
     return(
         <div>
             <Layout>
-            <Head title="Estudio"/>
+            <Head title="Notas"/>
             <div className = {blogStyles.banner}>
-                <h1>Estudio</h1>
-                <p>Actualmento soy estudiante de Ciencias de la Computación. Siempre me ha gustado aprender cosas nuevas. <br></br>
-                En esta sección publicaré notas, tips para estudiar y sobre cómo ser productivo, mi experiencia en la universidad y al estudiar programación.</p>
+                <h1>Notas</h1>
             </div>
             <div className = {blogStyles.posts}>
                {data.allMarkdownRemark.edges.map((edge) =>{
                     return (
                         <div className = {blogStyles.post}> 
-                            <Link to={`${edge.node.fields.slug}`}>
+                            <Link to={`/${edge.node.fields.slug}`}>
                             <Img fluid = {edge.node.frontmatter.ima.childImageSharp.fluid}/>
                             {edge.node.frontmatter.tags ? (
                                 <div className= {blogStyles.tagsContainer}>

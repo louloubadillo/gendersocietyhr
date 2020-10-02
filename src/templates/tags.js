@@ -9,9 +9,11 @@ import Head from '../components/head'
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext;
   const { edges, totalCount } = data.allMarkdownRemark;
-  const tagHeader = `${totalCount} posts${
+  const tagHeader = `${totalCount} post${
     totalCount === 1 ? '' : 's'
-  } tienen el tag: "${tag}"`;
+  } tiene${
+    totalCount === 1 ? '' : 'n'
+  } el tag: "${tag}"`;
   return (
     <div>
     <Layout>
@@ -59,7 +61,7 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
-            date
+            date(formatString: "DD/MM/YYYY")
             description
             ima {
               childImageSharp {

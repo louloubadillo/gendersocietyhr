@@ -19,7 +19,7 @@ const CodeSection = () => {
                             tags
                             title
                             description
-                            date
+                            date(formatString: "DD/MM/YYYY")
                             tags
                             category
                             ima {
@@ -45,13 +45,12 @@ const CodeSection = () => {
             <Head title="Programación"/>
             <div className = {blogStyles.banner}>
                 <h1>Programación</h1>
-                <p>En esta sección incluiré tutoriales, recursos para aprender a programar y recomendaciones.</p>
             </div>
             <div className = {blogStyles.posts}>
                {data.allMarkdownRemark.edges.map((edge) =>{
                     return (
                         <div className = {blogStyles.post}> 
-                            <Link to={`${edge.node.fields.slug}`}>
+                            <Link to={`/${edge.node.fields.slug}`}>
                             <Img fluid = {edge.node.frontmatter.ima.childImageSharp.fluid}/>
                             {edge.node.frontmatter.tags ? (
                                 <div className= {blogStyles.tagsContainer}>

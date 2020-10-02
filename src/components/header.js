@@ -20,7 +20,7 @@ const Header = () => {
                         <Link className = {headerStyles.navItem} activeClassName = {headerStyles.activeNavItem} to="/trabajo">   <span role="img" aria-label="Emoji de portafolio">💼</span> Trabajo</Link>
                     </li>
                     <li>
-                        <Link className = {headerStyles.navItem} activeClassName = {headerStyles.activeNavItem} to="/estudio">  <span role="img" aria-label="Emoji de libros">📚</span> Estudio</Link>
+                        <Link className = {headerStyles.navItem} activeClassName = {headerStyles.activeNavItem} to="/notas">  <span role="img" aria-label="Emoji de libros">📚</span> Notas</Link>
                     </li>
                     <li>
                         <Link className = {headerStyles.navItem} activeClassName = {headerStyles.activeNavItem} to="/proyectos">  <span role="img" aria-label="Emoji de un foco">💡</span> Proyectos</Link>

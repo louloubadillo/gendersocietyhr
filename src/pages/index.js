@@ -11,7 +11,7 @@ const HomePage = () => {
     const data = useStaticQuery(graphql`
         query{
             allMarkdownRemark(filter: { frontmatter: { cover: { eq: true} } }
-                sort: {order: DESC, fields: [frontmatter___date]}
+                sort: {fields: [frontmatter___date, frontmatter___title] order: DESC}
                 ) {
                 edges {
                     node{
@@ -20,7 +20,7 @@ const HomePage = () => {
                             title
                             description
                             category
-                            date
+                            date(formatString: "DD/MM/YYYY")
                             tags
                             ima {
                                 childImageSharp {

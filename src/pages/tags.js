@@ -33,6 +33,13 @@ export default TagsPage;
 export const pageQuery = graphql`
   query {
     allMarkdownRemark(limit: 2000) {
+      edges{
+        node{
+          frontmatter{
+            date(formatString: "DD/MM/YYYY")
+          }
+        }
+      }
       group(field: frontmatter___tags) {
         fieldValue
         totalCount

@@ -19,7 +19,7 @@ const ProjectsSection = () => {
                             tags
                             title
                             description
-                            date
+                            date(formatString: "DD/MM/YYYY")
                             tags
                             category
                             ima {
@@ -45,13 +45,12 @@ const ProjectsSection = () => {
             <Head title="Proyectos"/>
             <div className = {blogStyles.banner}>
                 <h1>Proyectos</h1>
-                <p>Me apasiona el emprendimiento. En esta sección compartiré acerca de los proyectos en los que he trabajado.</p>
             </div>
             <div className = {blogStyles.posts}>
                {data.allMarkdownRemark.edges.map((edge) =>{
                     return (
                         <div className = {blogStyles.post}> 
-                            <Link to={`${edge.node.fields.slug}`}>
+                            <Link to={`/${edge.node.fields.slug}`}>
                             <Img fluid = {edge.node.frontmatter.ima.childImageSharp.fluid}/>
                             {edge.node.frontmatter.tags ? (
                                 <div className= {blogStyles.tagsContainer}>
