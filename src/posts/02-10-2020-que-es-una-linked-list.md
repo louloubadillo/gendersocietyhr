@@ -9,7 +9,13 @@ cover: false
 ---
 
 ## ¿Qué son? 
-Es una estructura de datos que se compone por una secuencia de nodos. 
+Es una estructura de datos que se compone por una secuencia de nodos. <br>
+Cada nodo se compone dos partes: 
+- Un valor o dato 
+- Sus referencias (¿A qué nodos apunta?)
+
+En otras palabras: Un nodo solo sabe el dato que contiene y a qué nodos apuntar.
+
 
 ## Terminología 
 - Head (cabeza): Apunta al primer nodo de la lista
@@ -22,24 +28,47 @@ Es una estructura de datos que se compone por una secuencia de nodos.
 
 - Tamaño/longitud: cantidad de elementos en ella
   
-  - La lista puede estar vacía (head apunta a null)
+## Tipos de Linked Lists
+Hay 3 tipos de linked lists: 
+1. Single Linked Lists
+2. Double Linked Lists
+3. Circular Linked Lists
 
-## Double Linked List
-La lista tiene un apuntador al nodo sucesor y al nodo predecesor. 
+### 1. Single Linked Lists
+Cada nodo tiene una referencia al siguiente nodo. Por lo tanto, solo se puede recorrer la lista en una dirección. <br><br>
+Un ejemplo en C++ de la clase Nodo, para este tipo de lista enlazada: 
 ``` cpp
-class DoubleNode{
+class Node{
     private: 
         int value; 
-        DoubleNode *next, *prev; 
+        Node *next; 
     public: 
-        DoubleNode(int v, DoubleNode *_next, DoubleNode *_prev);
+        Node(int value, Node *next);
 }
 ``` 
 
-## Circular Linked List
-El último nodo tiene un apuntador al head node. 
+### 2. Double Linked List
+La lista tiene un apuntador al nodo sucesor y al nodo predecesor. Esto significa que se puede recorrer la lista en dos direcciones. <br> <br>
+Un ejemplo en C++ de la clase Nodo, para este tipo de lista enlazada: 
+``` cpp
+class Node{
+    private: 
+        int value; 
+        Node *next, *prev; 
+    public: 
+        DoubleNode(int value, Node *next, Node *prev);
+}
+``` 
+
+### 3. Circular Linked List
+Es un tipo de lista enlazada simple o doble, pero tiene una característica particular: El último nodo tiene un apuntador al head node. Esto significa que se puede recorrer infinitamente. 
+
+## Linked Lists en la memoria
+Como cada nodo tiene la referencia a la dirección del siguiente, los datos no deben estar almacenados secuencialmente en la memoria. 
 
 ## Operaciones
+
+Aquí hay una pequeña descripción de algunas de las operaciones más comunes en relación a las listas enlazadas. 
 
 ### Push (Añadir al inicio)
 - El método crea un nodo y lo añade al inicio de la lista
@@ -70,6 +99,10 @@ Para obtener el elemento n debo:
 - Usar la conexión 
   
 ## Ventajas y Desventajas
+El beneficio de saber usar diferentes estructuras de datos es que podemos compararlas, lo cual nos permite escoger la estructura que más nos conviene, de acuerdo a lo que estamos haciendo. <br>
+
+Comparando con un arreglo o vector, las ventajas/desventajas de implementar una lista enlazada son: 
+
 Ventajas
 - Insertar un elemento es O(1)
 
