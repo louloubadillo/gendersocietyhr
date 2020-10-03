@@ -29,41 +29,6 @@ Descubrí lo que era programar unos cuantos años después. Poco a poco fui ente
 
 <br>
 
-## Sobre el Blog
-
-1. El idioma 
-   
-    Fue muy difícil para mí "escoger" un idioma para el blog. 
-
-    Decidí escribir el sitio en español debido a que hay pocos recursos para aprender a programar en este idioma. <br> Sin embargo, habrán posts escritos en español y otros en inglés. 
-   
-2. Las secciones
-   
-   En cada sección se abordarán temas distintos:
-
-   - Code (Programación)
-
-        Contiene diferentes recursos para aprender a programar (tutoriales, presentaciones, etc.)
-
-   - Work (Trabajo)
-
-        Hablaré de mi experiencia trabajando en la industria. Esto incluye trabajo freelance, posibles internships, etc. 
-
-   - Study (Estudio)
-
-        En esta sección hablaré sobre cómo estudio, tips de productividad, libros que pueden resultar útiles, etc.
-
-   - Projects (Proyectos)
-
-        Esta sección va a contener los posts relacionados con los proyectos que he desarrollado. 
-
-3. Los temas
-
-   Cada post, independientemente de la sección en la que se encuentre, va a tener "tags", estos son más específicos y dependen del tema de cada post.  
-   Se pueden buscar posts de acuerdo a un tema en específico desde la sección "tags" en el menú superior.    
-
-<br>
-
 ## El Desarrollo
 
 Sé que existen varias excelentes opciones de sitios que te permiten tener un blog en cuestión de segundos, como Wordpress, Tumblr, etc. Lo consideré por mucho tiempo pero no se sentía correcto. Quería algo que fuera totalmente mío.
