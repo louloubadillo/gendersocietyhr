@@ -17,10 +17,7 @@ export const query = graphql`
             }
         ){
             frontmatter{
-                tags
                 title
-                date(formatString: "DD/MM/YYYY")
-                description
             }
             html
         }
@@ -33,7 +30,6 @@ const Blog = (props) => {
             <Head  title={props.data.markdownRemark.frontmatter.title}/>
             <div className = {postStyles.container}>
                 <h1>{props.data.markdownRemark.frontmatter.title}</h1>
-                <p>{props.data.markdownRemark.frontmatter.date}</p>
                 <div className = {postStyles.text} dangerouslySetInnerHTML={{__html : props.data.markdownRemark.html}}></div>
             </div>
         </Layout>

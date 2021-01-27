@@ -1,7 +1,7 @@
 ---
-ima: "./violentometro.png"
+ima: "./interseccionalidad.png"
 tags: ["definition"]
-title: "Violentómetro"
+title: "Interseccionalidad"
 date: "2020-10-02T00:00:00.000Z"
 ---
 # Lorem Ipsum

@@ -62,7 +62,6 @@ export const pageQuery = graphql`
           frontmatter {
             title
             date(formatString: "DD/MM/YYYY")
-            description
             ima {
               childImageSharp {
                   fluid(quality: 90, traceSVG: { color: "#2B2B2F" }) {

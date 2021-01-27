@@ -10,18 +10,14 @@ import Head from '../components/head'
 const HomePage = () => {
     const data = useStaticQuery(graphql`
         query{
-            allMarkdownRemark(filter: { frontmatter: { cover: { eq: true} } }
+            allMarkdownRemark(
                 sort: {fields: [frontmatter___date, frontmatter___title] order: DESC}
                 ) {
                 edges {
                     node{
                         frontmatter{
-                            tags
                             title
-                            description
-                            category
                             date(formatString: "DD/MM/YYYY")
-                            tags
                             ima {
                                 childImageSharp {
                                     fluid(quality: 90, traceSVG: { color: "#2B2B2F" }) {
@@ -49,8 +45,6 @@ const HomePage = () => {
                             <div className = {blogStyles.post}> 
                                 <Link to={`/${edge.node.fields.slug}`}>
                                 <Img fluid = {edge.node.frontmatter.ima.childImageSharp.fluid}/>
-                                <h2>{edge.node.frontmatter.title}</h2>
-                                <p>{edge.node.frontmatter.date}</p>
                                 </Link>
                             </div>
                         )

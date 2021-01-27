@@ -1,7 +1,7 @@
 ---
-ima: "./violentometro.png"
+ima: "./metoo.png"
 tags: ["definition"]
-title: "Violentómetro"
+title: "Movimiento #MeToo"
 date: "2020-10-02T00:00:00.000Z"
 ---
 # Lorem Ipsum
