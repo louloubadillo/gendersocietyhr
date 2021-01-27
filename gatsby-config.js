@@ -1,17 +1,11 @@
 module.exports = {
   
   siteMetadata: {
-    title: 'LBlog',
+    title: 'Feminismo',
     author: 'LouLouBadillo'
   },
 
   plugins:[
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-173473797-1",
-      }
-    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
