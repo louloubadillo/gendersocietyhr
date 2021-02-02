@@ -19,9 +19,13 @@ Todos deberíamos estar acostumbrados a no realizar ningún acto sexual, si no h
 
 ### 2. Hablar acerca de la raíz del problema
 La cultura de la violación continúa debido a ideas que tenemos como sociedad acerca de la masculinidad. Nos han enseñado que los hombres son dominantes y fuertes, y las mujeres sumisas y débiles. <br>
+
 Por otro lado, debemos hablar acerca de la práctica social de culpar a la víctima. Esta es una actitud que sugiere que una víctima es responsable de haber sufrido violencia, en vez de responsabilizar al perpetrador. <br>
+
 Cuando se discute acerca de casos de violencia sexual, se suele discutir acerca de la sobriedad de la víctima, de lo que llevaba puesto, la hora a la que sucedió, si estaba acompañada o no. Pero esta información es en realidad irrelevante. Debemos dejar de cuestionar a las víctimas. <br>
-Un ejemplo de esto es lo que sucedió recientemente en el programa “Hoy”, donde los conductores opinaron acerca del caso de dos youtubers mexicanos, culpando a la víctima de haber tomado y por haber mantenido una amistad con su abusador. 
+
+Un ejemplo de esto es lo que sucedió recientemente en el programa “Hoy”, donde los conductores opinaron acerca del <a href="https://www.youtube.com/watch?v=hAtMiUji5gE&ab_channel=NathCampos" target="_blank">caso de abuso sexual de Nath Campos</a>, culpándola a ella (la víctima), de haber tomado y por haber mantenido una amistad con su abusador. <br>
+Hay un <a href="https://www.youtube.com/watch?v=79hwlI7Drdw&ab_channel=PaolaRojas" target="_blank">vídeo</a> en donde posteriormente, la youtuber habló del tema. 
 
 ### 3. Tener cero tolerancia ante la violencia sexual 
 Como sociedad debemos darle más importancia a estos actos. No debemos permitirlos en ningún espacio, no importa la relación que tengamos con la persona que ejerció violencia.
