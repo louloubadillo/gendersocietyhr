@@ -14,6 +14,10 @@ const Header = () => {
                     <li>
                         <Link className = {headerStyles.navItem} activeClassName = {headerStyles.activeNavItem} to="/"> <span role="img" aria-label="Emoji de casa">🏠</span> Inicio</Link>
                     </li>
+                    <li>
+                        <Link className = {headerStyles.navItem} activeClassName = {headerStyles.activeNavItem} to="/about"> <span role="img" aria-label="Emoji de computadora">💻</span> Sobre El Proyecto</Link>
+                    </li>
+                   
                 </ul>
             </nav>
         </header>

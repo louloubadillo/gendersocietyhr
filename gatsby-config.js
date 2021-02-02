@@ -1,7 +1,7 @@
 module.exports = {
   
   siteMetadata: {
-    title: 'Feminismo',
+    title: 'Género, Sociedad y Derechos Humanos 101',
     author: 'LouLouBadillo'
   },
 
