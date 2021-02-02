@@ -5,7 +5,7 @@ title: "Lenguaje Inclusivo"
 date: "2020-10-02T00:00:00.000Z"
 ---
 
-El lenguaje influye nuestra forma de pensar
+El lenguaje influye nuestra forma de pensar.
 
 Cuando pensamos en el Sol nos imaginamos un astro poderoso, grande y fuerte. Mientras que cuando pensamos en la Luna la imaginamos delicada, tímida y frágil. Sin embargo, ¿sabías que en alemán el Sol es femenino y la Luna es masculino?
 
